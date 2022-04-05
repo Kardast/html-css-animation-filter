@@ -160,3 +160,69 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: moving-top;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: moving-bottom;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes moving-top{
+    0% {
+        left: 10%;
+    }
+    100% {
+        left: 69%;
+    }
+}
+
+@keyframes moving-bottom{
+    0% {
+        right: 20%;
+    }
+    100% {
+        right: 69%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: moving-top-circle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: moving-bottom-circle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes moving-top-circle{
+    0%   {left: 10%; top:-10px;}
+    25%  {left:180px; top:-10px;}
+    50%  {left:180px; top:60px;}
+    75%  {left:-10px; top:60px;}
+    100% {left:-10px; top:-30px;}
+}
+
+@keyframes moving-bottom-circle{
+    0%   {right: 20%; bottom:-10px;}
+    25%  {right:150px; bottom:-10px;}
+    50%  {right:150px; bottom:60px;}
+    75%  {right:-10px; bottom:60px;}
+    100% {right:-10px; bottom:-30px;}
+}
